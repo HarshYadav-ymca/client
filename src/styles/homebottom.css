@@ -1,0 +1,16 @@
+.icons{
+    background-color: rgb(241, 229, 253);
+    border-radius: 20px;
+    box-shadow: 3px 3px ghostwhite;
+}
+.icns>img{
+    margin-top: 10px;
+    height: 80px;
+}
+
+.icns h1{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: blue;
+    font-weight: 200;
+}

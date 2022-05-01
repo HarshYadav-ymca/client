@@ -1,19 +1,14 @@
 import "../styles/index.css";
 import NavBar from "./navBar";
-import Home from "./home";
-import baseimg from "../images/home.jpg";
+import Home from "./homeTop";
+import HomeBottom from "./homebottom";
 
 function App() {
   return (
-    <div
-      className="App"
-      style={{
-        backgroundImage: `url(${baseimg})`,
-        backgroundSize: "cover",
-      }}
-    >
+    <div className="App">
       <NavBar />
       <Home />
+      <HomeBottom />
     </div>
   );
 }
