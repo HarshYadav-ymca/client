@@ -1,0 +1,25 @@
+.home{
+    height: 100vh;
+    color: rgb(17, 70, 175);
+}
+
+.home h3{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.home button.btn{
+    margin-left: 30%;
+    background-color: none;
+    border-radius: 100px;
+    box-shadow: 5px 2px rgb(19, 7, 156);   
+    transition: transform 0.5s;
+}
+
+.home button.btn:hover{
+    transform: scale(1.2);
+}
+
+.home-text{
+    margin-top: 200px;
+}

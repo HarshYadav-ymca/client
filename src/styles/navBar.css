@@ -1,0 +1,25 @@
+.nav-link:hover{
+    border-bottom: 2px solid;
+}
+.nav-link{
+    transition: border-bottom 0.2s;
+}
+
+.butons{
+    border: 2px solid rgb(6, 41, 158);
+    border-radius: 50px;
+    transition: transform 0.3s;
+}
+
+.butons:hover{
+    background-color: rgb(6, 41, 158);
+    color: white;
+    transform: scale(1.1);
+}
+
+nav.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
