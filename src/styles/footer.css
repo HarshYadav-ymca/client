@@ -1,0 +1,21 @@
+.footer-icons{
+    border-bottom: 1px solid blueviolet;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.footer-icons>div>svg{
+    margin-left: 40%;
+}
+
+.footer-text h3{
+    color: rgb(72, 9, 207);
+    border-bottom: 1px solid rgb(72, 9, 207);
+    display: inline;
+    margin-left: 41%;
+    padding-bottom: 5px;
+}
+
+.footer-text p{
+    color: rgb(186, 219, 248);
+}
