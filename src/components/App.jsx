@@ -1,16 +1,18 @@
 import "../styles/index.css";
-import NavBar from "./navBar";
-import Home from "./homeTop";
-import HomeBottom from "./homebottom";
-import Footer from "./footer";
+import HomePage from "../pages/home";
+import ServicesPage from "../pages/services";
+import AboutPage from "../pages/about";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <Home />
-      <HomeBottom />
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />}></Route>
+        <Route path="/services" element={<ServicesPage />} />
+        <Route path="/about" element={<AboutPage />} />
+      </Routes>
+    </Router>
   );
 }
 

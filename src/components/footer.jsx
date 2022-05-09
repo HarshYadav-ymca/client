@@ -13,16 +13,16 @@ function Footer() {
       <Container>
         <Row className="footer-icons mt-5">
           <Col md="3">
-            <FaFacebook />
+            <FaFacebook size={25} />
           </Col>
           <Col md="3">
-            <AiFillInstagram />
+            <AiFillInstagram size={25} />
           </Col>
           <Col md="3">
-            <AiFillGithub />
+            <AiFillGithub size={25} />
           </Col>
           <Col md="3">
-            <AiFillLinkedin />
+            <AiFillLinkedin size={25} />
           </Col>
         </Row>
       </Container>

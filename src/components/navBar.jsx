@@ -16,13 +16,13 @@ function NavBar() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav ">
             <Nav className="me-auto">
-              <Nav.Link href="#home" className="text-primary mr-4 mt-2">
+              <Nav.Link href=".." className="text-primary mr-4 mt-2">
                 Home
               </Nav.Link>
-              <Nav.Link href="#Services" className="text-primary mr-4 mt-2">
+              <Nav.Link href="Services" className="text-primary mr-4 mt-2">
                 Services
               </Nav.Link>
-              <Nav.Link href="#about" className="text-primary mt-2">
+              <Nav.Link href="about" className="text-primary mt-2">
                 About Us
               </Nav.Link>
             </Nav>
