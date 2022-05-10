@@ -6,7 +6,7 @@ import "../styles/navBar.css";
 function NavBar() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="white" variant="light">
-      <Row>
+      <Row className="mx-0">
         <Col lg="1" md="2" sm="3" xs="4" className="ml-5">
           <Navbar.Brand href="#">
             <img src={brand} alt="Brand" className="img-fluid" />

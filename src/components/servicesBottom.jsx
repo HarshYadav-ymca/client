@@ -35,7 +35,7 @@ function ServicesBottom() {
           <Card className="shadow mt-5">
             <div>
               <Row>
-                <Col md="4" className="mx-auto mt-n5 services-icon py-3">
+                <Col md="4" className="mx-auto mt-n5 services-icon blue py-3">
                   <img src={housing} alt="" className="img-fluid" />
                 </Col>
               </Row>
@@ -74,7 +74,7 @@ function ServicesBottom() {
           <Card className="shadow mt-5">
             <div>
               <Row>
-                <Col md="4" className="mx-auto mt-n5 services-icon py-3">
+                <Col md="4" className="mx-auto mt-n5 services-icon blue py-3">
                   <img src={kitchen} alt="" className="img-fluid" />
                 </Col>
               </Row>
@@ -112,7 +112,7 @@ function ServicesBottom() {
           <Card className="shadow mt-5">
             <div>
               <Row>
-                <Col md="4" className="mx-auto mt-n5 services-icon py-3">
+                <Col md="4" className="mx-auto mt-n5 services-icon blue py-3">
                   <img src={additional} alt="" className="img-fluid" />
                 </Col>
               </Row>

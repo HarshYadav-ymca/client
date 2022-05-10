@@ -12,7 +12,7 @@ function Home() {
       }}
     >
       <div className="home d-flex justify-content-center">
-        <Row>
+        <Row className="mx-0">
           <Col md="6" className="home-text">
             <h2 className="text-center">
               <strong>ONE STOP SOLUTION FOR ALL YOUR RENTING</strong>
