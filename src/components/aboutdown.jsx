@@ -43,7 +43,7 @@ function AboutBottom() {
             with its own worries and stress, so we assure our house owners of a
             verified tenancy and monetary independence, where the collection of
             rent is handled either manually or through online portals. We strive
-            to make the MONKHOOD EXPERIENCE the best experience for both our
+            to make the Students Experience the best experience for both our
             tenants and renters alike
           </p>
         </Col>

@@ -11,7 +11,7 @@
     font-weight: 400;
 }
 
-.home button.btn{
+.home a.btn{
     margin-left: 30%;
     background-color: none;
     border-radius: 100px;
@@ -19,7 +19,7 @@
     transition: transform 0.5s;
 }
 
-.home button.btn:hover{
+.home a.btn:hover{
     transform: scale(1.2);
 }
 

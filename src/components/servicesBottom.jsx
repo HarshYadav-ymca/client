@@ -13,7 +13,7 @@ function ServicesBottom() {
     <Container className="mt-5">
       <Row>
         <Col md="4">
-          <Card className="shadow mt-5 mb-3">
+          <Card className="shadow mt-5 mb-3 services-card">
             <div>
               <Row>
                 <Col md="4" className="mx-auto mt-n5 services-icon py-3">
@@ -32,7 +32,7 @@ function ServicesBottom() {
           </Card>
         </Col>
         <Col md="4">
-          <Card className="shadow mt-5">
+          <Card className="shadow mt-5 services-card">
             <div>
               <Row>
                 <Col md="4" className="mx-auto mt-n5 services-icon blue py-3">
@@ -51,7 +51,7 @@ function ServicesBottom() {
           </Card>
         </Col>
         <Col md="4">
-          <Card className="shadow mt-5">
+          <Card className="shadow mt-5 services-card">
             <div>
               <Row>
                 <Col md="4" className="mx-auto mt-n5 services-icon py-3">
@@ -71,7 +71,7 @@ function ServicesBottom() {
           </Card>
         </Col>
         <Col md="4">
-          <Card className="shadow mt-5">
+          <Card className="shadow mt-5 services-card">
             <div>
               <Row>
                 <Col md="4" className="mx-auto mt-n5 services-icon blue py-3">
@@ -90,7 +90,7 @@ function ServicesBottom() {
           </Card>
         </Col>
         <Col md="4">
-          <Card className="shadow mt-5">
+          <Card className="shadow mt-5 services-card">
             <div>
               <Row>
                 <Col md="4" className="mx-auto mt-n5 services-icon py-3">
@@ -109,7 +109,7 @@ function ServicesBottom() {
           </Card>
         </Col>
         <Col md="4">
-          <Card className="shadow mt-5">
+          <Card className="shadow mt-5 services-card">
             <div>
               <Row>
                 <Col md="4" className="mx-auto mt-n5 services-icon blue py-3">

@@ -27,10 +27,10 @@ function NavBar() {
               </Nav.Link>
             </Nav>
             <Nav className="ml-auto">
-              <Nav.Link href="#list" className="mt-1 butons">
+              <Nav.Link href="list" className="mt-1 butons">
                 List Your Property
               </Nav.Link>
-              <Nav.Link href="#login" className="ml-2 mt-1 butons">
+              <Nav.Link href="login" className="ml-2 mt-1 butons">
                 Login
               </Nav.Link>
             </Nav>

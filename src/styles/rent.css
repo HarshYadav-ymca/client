@@ -1,0 +1,9 @@
+h1.rent-heading{
+    font-size: 50px;
+}
+
+.p_img{
+    height: 200px;
+    width: auto;
+    overflow: hidden;
+}

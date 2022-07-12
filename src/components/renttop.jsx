@@ -1,9 +1,11 @@
 import React from "react";
-import baseimg from "../images/backgrounds/cabinets.webp";
+import baseimg from "../images/backgrounds/rent.webp";
+import "../styles/rent.css";
+
 // import about1 from "../images/ICONS/about-1.png";
 // import { Row, Col } from "react-bootstrap";
 
-function About() {
+function RentTop() {
   return (
     <div
       style={{
@@ -12,10 +14,10 @@ function About() {
       }}
     >
       <div className="home d-flex justify-content-center">
-        <h1 className="text-center">About</h1>
+        <h1 className="text-center rent-heading">Rent Properties</h1>
       </div>
     </div>
   );
 }
 
-export default About;
+export default RentTop;

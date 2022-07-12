@@ -21,3 +21,11 @@ p.services-text{
     line-height: 20px;
     
 }
+
+.services-card{
+    transition: transform 0.3s;
+}
+
+.services-card:hover{
+    transform: scale(1.1);
+}

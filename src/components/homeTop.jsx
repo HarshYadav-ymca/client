@@ -20,7 +20,9 @@ function Home() {
             <h3 className="text-center mt-2">
               hassle free real estate and furniture renting at ease
             </h3>
-            <Button className="mt-2 btn-light">Rent Now</Button>
+            <Button className="mt-2 btn-light" href="/rent">
+              Rent Now
+            </Button>
           </Col>
         </Row>
       </div>

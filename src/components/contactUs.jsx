@@ -6,7 +6,7 @@ import or from "../images/ICONS/or.png";
 function ContactUs() {
   return (
     <div className="bg-light">
-      <Row className="p-4 mt-5 mb-5">
+      <Row className="p-4 mt-5 mx-0">
         <Col md="4" className="contact-us">
           <h2 className="text-center">CONTACT US</h2>
           <h5 className="text-center contact-text">Fill out this form</h5>
