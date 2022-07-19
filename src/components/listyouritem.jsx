@@ -117,7 +117,7 @@ function List() {
     });
     const data = await res.json();
 
-    if (data.status === 200) {
+    if (data.status < 400) {
       window.alert("Successfully Posted");
       console.log("Successfully Posted", data);
     } else {
@@ -221,10 +221,11 @@ function List() {
                     onChange={handleInputs}
                   >
                     <option>Select Property Subype</option>
-                    <option value="1 Room">1 Room</option>
-                    <option value="1 BHK">1 BHK</option>
-                    <option value="2 BHK">2 BHK</option>
-                    <option value="3 BHK">3 BHK</option>
+                    <option value="1 Room Set">1 Room Set</option>
+                    <option value="1 BHK Flat">1 BHK</option>
+                    <option value="2 BHK Flat">2 BHK</option>
+                    <option value="3 BHK Flat">3 BHK</option>
+                    <option value="3+ BHK Flat">3+ BHK</option>
                   </Form.Select>
                 )}
                 {property.type === "Furniture" && (

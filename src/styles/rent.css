@@ -7,3 +7,11 @@ h1.rent-heading{
     width: auto;
     overflow: hidden;
 }
+
+.property-card{
+    transition: transform 0.3s;
+}
+
+.property-card:hover{
+    transform: scale(1.05);
+}

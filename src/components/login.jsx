@@ -2,8 +2,38 @@ import React from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 
 import "../styles/login.css";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function LoginForm() {
+  const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const submitLogin = async (e) => {
+    e.preventDefault();
+    const res = await fetch("http://localhost:8000/login", {
+      // mode: "cors",
+      method: "POST",
+      credentials: "include",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email,
+        password,
+      }),
+    });
+    // const data = res.json();
+    // console.log(res.status);
+    if (res.status === 422) {
+      window.alert("Invalid credentials");
+    } else {
+      window.alert("Login Successful");
+      console.log(res.cookie);
+      navigate("/");
+    }
+  };
   return (
     <Container>
       <Row className="login-page justify-content-center">
@@ -13,25 +43,43 @@ function LoginForm() {
           <Form>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
+              <Form.Control
+                type="email"
+                placeholder="Enter email"
+                name="email"
+                value={email}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                }}
+              />
               <Form.Text className="text-muted">
                 We'll never share your email with anyone else.
               </Form.Text>
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicPassword">
               <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Password" />
+              <Form.Control
+                type="password"
+                placeholder="Password"
+                name="password"
+                value={password}
+                onChange={(e) => {
+                  setPassword(e.target.value);
+                }}
+              />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicCheckbox">
-              <Form.Check type="checkbox" label="Check me out" />
-            </Form.Group>
-            <Button className="mx-auto login-button">Submit</Button>
-            <br />
-            <a href="/forgetpassword" className="forget">
-              Forgot Your Password ?{" "}
-            </a>{" "}
-            <br />
-            <a href="/signup" className="forget">
+            <div className="mb-0 d-flex justify-content-center">
+              <Button className="mx-auto login-button" onClick={submitLogin}>
+                Submit
+              </Button>
+            </div>
+            <a
+              href="/forgetpassword"
+              className="forget mx-auto text-center d-block mb-0"
+            >
+              Forgot Your Password ?
+            </a>
+            <a href="/signup" className="forget mx-auto text-center d-block">
               New User ? Register
             </a>
           </Form>
