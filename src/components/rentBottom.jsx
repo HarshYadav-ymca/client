@@ -29,7 +29,7 @@ function RentBottom() {
               <Card
                 className="shadow mt-5 mb-3 property-card"
                 onClick={() => {
-                  navigate("");
+                  navigate(`/properties/${property._id}`);
                 }}
               >
                 <div>

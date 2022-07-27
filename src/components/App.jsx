@@ -7,7 +7,7 @@ import Login from "../pages/Login";
 import SignUp from "../pages/signUp";
 import ListPage from "../pages/listPage";
 import RentPage from "../pages/rentNow";
-
+import Properties from "./properties";
 function App() {
   return (
     <Router>
@@ -19,6 +19,7 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/list" element={<ListPage />} />
         <Route path="/rent" element={<RentPage />} />
+        <Route path="/properties/:id" element={<Properties />} />
       </Routes>
     </Router>
   );
