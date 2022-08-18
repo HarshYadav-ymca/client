@@ -19,7 +19,7 @@ function HomeBottom() {
               alt="house"
               className="img-fluid mx-auto d-block"
             />
-            <h1 className="text-center">
+            <h1 className="text-center" href="/rent">
               Rental <br></br> Properties
             </h1>
           </Col>

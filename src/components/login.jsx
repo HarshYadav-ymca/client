@@ -26,12 +26,12 @@ function LoginForm() {
     });
     // const data = res.json();
     // console.log(res.status);
-    if (res.status === 422) {
-      window.alert("Invalid credentials");
-    } else {
+    if (res.status === 201) {
       window.alert("Login Successful");
       console.log(res.cookie);
       navigate("/");
+    } else {
+      window.alert("Invalid credentials");
     }
   };
   return (

@@ -98,7 +98,7 @@ function NavBar() {
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu>
-                    <Dropdown.Item href="#/action-1">My Profile</Dropdown.Item>
+                    <Dropdown.Item href="/profile">My Profile</Dropdown.Item>
                     <Dropdown.Item onClick={logOut}>Logout</Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>

@@ -9,6 +9,39 @@ function Properties() {
   const { id } = useParams();
   // const [properties, setProperties] = useState([]);
   const [property, setProperty] = useState({});
+
+  const [user, setUser] = useState({});
+  // const [checkUser, setCheckUser] = useState(false);
+  const checkLogin = async () => {
+    try {
+      const res = await fetch("http://localhost:8000/about", {
+        method: "GET",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        credentials: "include",
+      });
+
+      const data = await res.json();
+
+      if (!res.status === 200) {
+        throw new Error(res.error);
+      } else {
+        setUser(data);
+        // setCheckUser(true);
+      }
+    } catch (err) {
+      console.log(err);
+      // setCheckUser(false);
+      // history("/login");
+    }
+  };
+
+  useEffect(() => {
+    checkLogin();
+  }, []);
+
   useEffect(() => {
     const getProperties = async (req, res) => {
       res = await axios.get("http://localhost:8000/properties");
@@ -75,7 +108,11 @@ function Properties() {
           <Button
             className="mb-2"
             onClick={() => {
-              setDetails(true);
+              if (user.verified) {
+                setDetails(true);
+              } else {
+                window.alert("Please verify your account first");
+              }
             }}
           >
             Get Owner Details

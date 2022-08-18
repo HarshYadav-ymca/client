@@ -117,7 +117,7 @@ function List() {
     });
     const data = await res.json();
 
-    if (data.status < 400) {
+    if (res.status === 201) {
       window.alert("Successfully Posted");
       console.log("Successfully Posted", data);
     } else {

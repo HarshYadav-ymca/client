@@ -8,6 +8,7 @@ import SignUp from "../pages/signUp";
 import ListPage from "../pages/listPage";
 import RentPage from "../pages/rentNow";
 import Properties from "./properties";
+import ProfilePage from "../pages/profilePage";
 function App() {
   return (
     <Router>
@@ -20,6 +21,7 @@ function App() {
         <Route path="/list" element={<ListPage />} />
         <Route path="/rent" element={<RentPage />} />
         <Route path="/properties/:id" element={<Properties />} />
+        <Route path="/profile" element={<ProfilePage />} />
       </Routes>
     </Router>
   );
