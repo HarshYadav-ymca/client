@@ -7,19 +7,27 @@ import kitchen from "../images/kitchen.png";
 import furniture from "../images/furniture.png";
 import contact from "../images/contact.png";
 import money from "../images/Money.png";
+import { useNavigate } from "react-router-dom";
 
 function HomeBottom() {
+  const navigate = useNavigate();
   return (
     <div className="mt-5">
       <Container>
         <Row className="justify-content-center icons shadow">
-          <Col lg="2" className="icns justify-content-center">
+          <Col
+            lg="2"
+            className="icns justify-content-center"
+            onClick={() => {
+              navigate("/rent");
+            }}
+          >
             <img
               src={house}
               alt="house"
               className="img-fluid mx-auto d-block"
             />
-            <h1 className="text-center" href="/rent">
+            <h1 className="text-center">
               Rental <br></br> Properties
             </h1>
           </Col>
